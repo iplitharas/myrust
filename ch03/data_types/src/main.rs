@@ -1,7 +1,16 @@
 use std::io;
 fn main() {
-    arrays_demo()
-   
+    arrays_demo();
+    tuple_demo() ;  
+}
+// 
+fn tuple_demo(){
+    let mut colors  /* what type is this? */= ("red", "blue", "yellow");
+    println!("Colors are: {:?}", colors);
+    let (red,blue, yellow) = colors;
+    println!("First color is: {}", red);
+    println!("Second color is: {}", blue);
+    println!("Third color is: {}", yellow);
 }
 
 
@@ -22,7 +31,7 @@ fn arrays_demo(){
 
     let index: usize = index.trim().parse().expect("Index entered was not a number");
     let element = numbers[index];
-
+    
     println!("The value of the element at index {index} is: {element}");
 
 }
