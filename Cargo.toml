@@ -3,4 +3,5 @@ members = [
     "ch03/data_types",
     "ch03/variables",
     "ch03/functions",
+    "ch03/control_flow",
 ]
