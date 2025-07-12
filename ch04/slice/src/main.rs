@@ -29,6 +29,10 @@ but having the owner of data automatically clean up that data when the owner goe
 
 Ownership affects how lots of other parts of Rust work, so we’ll talk about these concepts further throughout the rest of the book.
 Let’s move on to Chapter 5 and look at grouping pieces of data together in a struct.
+
+
+Note:
+  To create a slice we always have to use [..] notation same like Python
 */
 
 
