@@ -1,10 +1,8 @@
 /*
-Intro:
--> Enums and Pattern Matching
+==================================================================================================================================================
+** Enums and Pattern Matching** 
 * Enums allow you to define a type by enumerating its possible variants.
  * Next, we’ll explore a particularly **useful enum, called Option**, which expresses that a value can be either something or nothing.
-
-
 
  `enums`` give you a way of saying a value is **one of a possible set of values**.
 
@@ -18,6 +16,8 @@ We automatically get this constructor function defined as a result of defining t
 --> you can put any kind of data inside an enum variant: strings, numeric types, or structs, for example.
 You can even include another enum! Also, standard library types are often not much more complicated than what you might come up with.
 
+
+==================================================================================================================================================
 
 ** The Option Enum and Its Advantages Over Null Values **
 
@@ -50,6 +50,7 @@ let sum = x + y;
 In other words, you have to **convert an Option<T> to a T** before you can perform T operations with it. 
 Generally, this helps catch one of the most common issues with null: assuming that something isn’t null when it actually is.
 
+==================================================================================================================================================
 */
 
  #[derive(Debug)]
