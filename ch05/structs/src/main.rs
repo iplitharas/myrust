@@ -15,10 +15,10 @@ fn main() {
 }
 
 #[derive(Debug)]
-struct Color(i32,i32,i32);
+struct Color(i32,i32,i32); // tuple struct
 
 
-struct AlwaysEqual;
+struct AlwaysEqual;  // unit struct
 
 #[derive(Debug)]
 struct User{
