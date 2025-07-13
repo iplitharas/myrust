@@ -2,9 +2,11 @@
 ============================================================================
                The match Control Flow Construct
 ============================================================================
-Rust has an extremely powerful control flow construct called match that allows you to compare a value against a series of patterns and then execute code based on which pattern matches.
+Rust has an extremely powerful control flow construct called match that allows you to compare a value against
+a series of patterns and then execute code based on which pattern matches.
 Patterns can be made up of literal values, variable names, wildcards, and many other things;
-The power of match comes from the expressiveness of the patterns and the fact that the compiler confirms that all possible cases are handled.
+The power of match comes from the expressiveness of the patterns and the fact that
+the compiler confirms that all possible cases are handled.
 
 Syntax:
 
@@ -20,17 +22,21 @@ If a pattern matches the value, the code associated with that pattern is execute
 If that pattern doesn’t match the value, execution continues to the next arm,
 much as in a coin-sorting machine. We can have as many arms as we need
 
+
 ============================================================================
             Patterns That Bind to Values
 ============================================================================
 Another useful feature of match arms is that they can bind to the parts of the values that match the pattern. 
 This is how we can extract values out of enum variants. 
 
+
 ============================================================================
         Matching with Option<T>
 ============================================================================
-Does Some(5) match Some(i)? It does! We have the same variant. The i binds to the value contained in Some, so i takes the value 5. 
+Does Some(5) match Some(i)? It does! We have the same variant. The i binds to the value contained in
+Some, so i takes the value 5. 
 The code in the match arm is then executed, so we add 1 to the value of i and create a new Some value with our total 6 inside.
+
 
 =============================================================================
        Matches Are Exhaustive
@@ -47,7 +53,9 @@ This don't match the None so it will not compile..
 ===============================================================================
         Catch-All Patterns and the _ Placeholder
 ===============================================================================
-Rust also has a pattern we can use when we want a catch-all but don’t want to use the value in the catch-all pattern: _ is a special pattern that matches any value and does not bind to that value.
+
+Rust also has a pattern we can use when we want a catch-all but don’t want to use the value in the catch-all pattern: _ 
+is a special pattern that matches any value and does not bind to that value.
 This tells Rust we aren’t going to use the value, so Rust won’t warn us about an unused variable.
 
 Let’s change the rules of the game: now, if you roll anything other than a 3 or a 7, you must roll again.
