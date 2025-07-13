@@ -3,5 +3,5 @@ members = [
     "ch03/data_types",
     "ch03/variables",
     "ch03/functions",
-    "ch03/control_flow", "ch04/ownership_intro", "ch04/borrowing", "ch04/slice", "ch05/structs", "ch05/rectangles", "ch06/enums", "ch06/match_demo",
+    "ch03/control_flow", "ch04/ownership_intro", "ch04/borrowing", "ch04/slice", "ch05/structs", "ch05/rectangles", "ch06/enums", "ch06/match_demo", "ch06/if_let_demo",
 ]
